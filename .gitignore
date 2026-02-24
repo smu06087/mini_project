@@ -1,0 +1,18 @@
+# 빌드 결과물 (컴파일된 클래스 파일)
+build/
+bin/
+
+# 이클립스 설정 파일 (팀원마다 환경이 다를 수 있음)
+.metadata/
+.settings/
+.project
+.classpath
+image/
+# 서버 설정 (Servers 폴더 제외)
+Servers/
+
+# OS 및 임시 파일
+.DS_Store
+Thumbs.db
+*.log
+tmp/
