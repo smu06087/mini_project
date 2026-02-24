@@ -20,7 +20,6 @@ public class ArticleDivDTO {
 		}
 		public void setMemberId(String memberId) {
 			this.memberId = memberId;
-			return;
 		}
 		public String getArticleDivCd() {
 			return articleDivCd;
