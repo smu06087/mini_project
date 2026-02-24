@@ -7,7 +7,7 @@
 <%@ page import="dao.ArticleDivDAO" %>
 <%@ page import="dao.ArticleListDAO" %>
 <%@ page import="dao.ArticleDtlDAO" %>
-<%@ page import="dao.MypageDAO" %>
+<%@ page import="dao.MypageDAO" %> 
 
 <%@ page import="dto.ArticleDTO" %>
 <%@ page import="dto.ArticleDtlDTO" %>
