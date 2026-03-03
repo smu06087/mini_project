@@ -90,7 +90,7 @@ Client → Controller(Servlet) → DAO → DB
 - 댓글 계층 구조 재귀 출력 구현 <br>
 - 작성자 본인 여부에 따른 수정/삭제 버튼 분기 처리 <br> <br>
 
-  구현 포인트 <br>
+🔹 구현 포인트 <br>
 - 게시판 및 댓글 기능은 JSP/Servlet 구조에서 직접 구현 <br>
 - 요청 처리 흐름을 이해하고 Controller → DAO → View 흐름을 명확히 구성 <br>
 - 세션 기반 권한 제어 및 조회수 중복 방지 로직 설계 <br>
