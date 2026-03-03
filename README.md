@@ -1,8 +1,30 @@
 1. 프로젝트 개요(Overview)
-2. 기술 스택 (Tech Stack)
+프로젝트 명 : 여행지 / 맛집 추천을 위한 기사 등록 시스템 
+한 줄 소개 : 여행지 및 맛집 정보를 카테고리 기반으로 관리하고 검색·정렬·기자별 조회 기능을 제공하는 기사 등록 시스템
+개발 기간 : 2026.01.21 ~ 2026.02.20 (약 1개월)
+참여 인원 : 3명 (팀 프로젝트)
+담당 역할 : 팀장, 게시판 CRUD, 댓글 기능, ERD 작성
+
+3. 기술 스택 (Tech Stack)
+Backend 
+Java
+JSP / Servlet
+Oracle
+
+Frontend
+HTML / CSS / JavaScript
+
+Tool
+Eclipse 4.38.0
+sqldeveloper 24.3.1.347
+apache-tomcat-9.0.113
+
 3. 주요 기능 (Features)
+
 4. 시스템 구조 (Architecture)
+
 5. ERD (데이터 베이스 설계)
+
 6. 트러블 슈팅 (Trobuleshooting)
 
 6-1. 조회수 중복 증가 문제
