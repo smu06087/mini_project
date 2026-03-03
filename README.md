@@ -25,7 +25,36 @@ apache-tomcat-9.0.113 <br>
 
 
 4. 시스템 구조 (Architecture) <br>
+본 프로젝트는 MVC(Model-View-Controller) 패턴을 기반으로 설계되었습니다. <br>
+역할을 분리하여 요청 처리 흐름을 명확히 하고, 유지보수성과 확장성을 고려한 구조로 구현하였습니다. <br>
 
+전체 요청 처리 흐름 <br>
+Client → Controller(Servlet) → DAO → DB  
+　　　　　　　　　　　↓  
+　　　　　　　　　　JSP(View)
+
+🔹 Controller (Servlet) <br>
+- 클라이언트 요청 처리 및 URL 매핑 <br>
+- 요청 파라미터 수집 및 DAO 호출 <br>
+- 세션(Session)을 활용한 로그인 상태 및 권한 검증 <br>
+- 처리 결과를 JSP(View)로 전달 <br>
+
+🔹 DAO (Data Access Object) <br>
+- Oracle DB 접근 및 SQL 실행 <br>
+- 게시글(Article), 댓글(Comment), 회원(Member), 카테고리(Category) 데이터 CRUD 처리 <br>
+- 비즈니스 로직과 데이터 접근 로직 분리 <br>
+
+🔹 View (JSP) <br>
+- EL, JSTL을 활용한 데이터 출력 <br>
+- 조건문을 통한 권한 기반 UI 제어 <br> 
+- 댓글 계층 구조 재귀 출력 구현 <br>
+- 작성자 본인 여부에 따른 수정/삭제 버튼 분기 처리 <br>
+
+구현 포인트 <br>
+- 게시판 및 댓글 기능은 JSP/Servlet 구조에서 직접 구현 <br>
+- 요청 처리 흐름을 이해하고 Controller → DAO → View 흐름을 명확히 구성 <br>
+- 세션 기반 권한 제어 및 조회수 중복 방지 로직 설계 <br>
+- 단순 CRUD를 넘어 상태(Session) 기반 로직을 적용하여 데이터 무결성 확보 <br>
 
 5. ERD (데이터 베이스 설계) <br>
 
