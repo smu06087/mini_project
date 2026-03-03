@@ -8,9 +8,9 @@
 
 2. 기술 스택 (Tech Stack)
 
-Backend 
-Java
-JSP / Servlet
+Backend <br>
+Java <br>
+JSP / Servlet <br>
 Oracle
 
 Frontend
