@@ -29,7 +29,7 @@
 본 프로젝트는 MVC(Model-View-Controller) 패턴을 기반으로 설계되었습니다. <br>
 역할을 분리하여 요청 처리 흐름을 명확히 하고, 유지보수성과 확장성을 고려한 구조로 구현하였습니다. <br>
 
-전체 요청 처리 흐름 <br>
+🔹 전체 요청 처리 흐름 <br>
 Client → Controller(Servlet) → DAO → DB  
 　　　　　　　　　　　↓  
 　　　　　　　　　　JSP(View)
@@ -51,7 +51,7 @@ Client → Controller(Servlet) → DAO → DB
 - 댓글 계층 구조 재귀 출력 구현 <br>
 - 작성자 본인 여부에 따른 수정/삭제 버튼 분기 처리 <br>
 
-구현 포인트 <br>
+  구현 포인트 <br>
 - 게시판 및 댓글 기능은 JSP/Servlet 구조에서 직접 구현 <br>
 - 요청 처리 흐름을 이해하고 Controller → DAO → View 흐름을 명확히 구성 <br>
 - 세션 기반 권한 제어 및 조회수 중복 방지 로직 설계 <br>
@@ -69,7 +69,7 @@ ERD 사진 <br>
 - MEMBER_STAT_CD, JOURNAL_REASON_CD 등 코드값 기반 상태 관리 <br>
 - 회원 탈퇴 및 상태 변경을 고려한 구조 설계 <br>
 
-설계 포인트 <br>
+  설계 포인트 <br>
 - 단순 회원 테이블이 아니라 상태 코드 기반 관리 구조 <br>
 - 확장성을 고려한 코드 분리 설계 <br>
 
@@ -78,7 +78,7 @@ ERD 사진 <br>
 - 제목, 작성자, 카테고리, 조회수(CNT), 추천수(GOOD) 등 관리 <br>
 - Member, Category와 FK 관계 <br>
 
-설계 포인트 <br>
+  설계 포인트 <br>
 - 조회수(CNT)와 추천수(GOOD)를 컬럼 분리 <br>
 - ARTICLE_STAT, CONTENT_ROLE을 통해 게시글 상태 관리 가능 <br>
 - 게시글 기본 정보와 상세 내용을 분리하여 관리 <br>
@@ -87,7 +87,7 @@ ERD 사진 <br>
 - 게시글 본문 및 이미지, 외부 링크 정보 저장 <br>
 - ARTICLE과 1:1 관계 <br>
 
-설계 포인트 <br>
+  설계 포인트 <br>
 - 게시글 기본 정보와 상세 내용을 분리 <br>
 - 대용량 컬럼(VARCHAR2 4000)을 별도 테이블로 분리 <br>
 - 목록 조회 성능 개선 고려 <br>
@@ -96,7 +96,7 @@ ERD 사진 <br>
 - 카테고리 정보 저장 <br>
 - UP_CATEGORY_ID를 통한 계층 구조 구현 (대분류/소분류) <br>
 
-설계 포인트 <br>
+  설계 포인트 <br>
 - 자기참조(Self Join) 구조 <br>
 - 카테고리 확장성 고려 <br>
 - 대분류/소분류 유연한 관리 가능 <br>
@@ -106,7 +106,7 @@ ERD 사진 <br>
 - UP_COMMENT_ID를 활용한 계층 구조 설계 <br>
 - ARTICLE과 1:N 관계 <br>
 
-설계 포인트 <br>
+  설계 포인트 <br>
 - 자기참조 기반 트리 구조 <br>
 - 무제한 대댓글 확장 가능 <br>
 - depth 기반 출력 로직과 연결 <br>
@@ -119,7 +119,7 @@ ERD 사진 <br>
 - 상태 코드 관리용 테이블 <br>
 - MEMBER_STAT_CD, ARTICLE_STAT 등과 연결 가능 <br>
 
-설계 포인트 <br>
+  설계 포인트 <br>
 - 하드코딩 방지 <br>
 - 코드값 중앙 관리 <br>
 - 유지보수 용이 <br>
