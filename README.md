@@ -59,7 +59,7 @@ Client → Controller(Servlet) → DAO → DB
 
 5. ERD (데이터 베이스 설계) <br>
 
-미니프로젝트ERD 최종본.png <br>
+https://github.com/smu06087/mini_project/blob/main/%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8ERD%20%EC%B5%9C%EC%A2%85%EB%B3%B8.png<br>
 본 프로젝트는 기사형 콘텐츠 관리 시스템 구조를 기반으로 설계하였으며, 게시글 중심 구조에 댓글 계층 구조와 카테고리 분류, 코드 관리 테이블을 결합하였습니다. <br>
 데이터 무결성과 확장성을 고려하여 테이블을 분리 설계하였습니다. <br>
 
