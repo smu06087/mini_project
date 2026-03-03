@@ -11,15 +11,15 @@
 Backend <br>
 Java <br>
 JSP / Servlet <br>
-Oracle
+Oracle <br>
 
-Frontend
-HTML / CSS / JavaScript
+Frontend <br>
+HTML / CSS / JavaScript <br>
 
-Tool
-Eclipse 4.38.0
-sqldeveloper 24.3.1.347
-apache-tomcat-9.0.113
+Tool <br>
+Eclipse 4.38.0 <br>
+sqldeveloper 24.3.1.347 <br>
+apache-tomcat-9.0.113 <br>
 
 3. 주요 기능 (Features)
 
@@ -34,14 +34,12 @@ apache-tomcat-9.0.113
 
 6-1. 조회수 중복 증가 문제
    
-🔹 문제
-게시글 상세 페이지에서 새로고침(F5) 또는 동일 사용자의 반복 접근 시
-조회수가 계속 증가하는 문제가 발생했습니다.
-이로 인해 실제 조회수보다 과대 집계되는 현상이 나타났습니다.
+🔹 문제 <br>
+게시글 상세 페이지에서 새로고침(F5) 또는 동일 사용자의 반복 접근 시 조회수가 계속 증가하는 문제가 발생했습니다. <br>
+이로 인해 실제 조회수보다 과대 집계되는 현상이 나타났습니다. <br>
 
-🔹 원인
-조회수 증가 로직이 페이지 접근 시마다 실행되는 구조였으며,
-사용자의 중복 접근 여부를 검증하지 않은 상태였습니다.
+🔹 원인 <br>
+조회수 증가 로직이 페이지 접근 시마다 실행되는 구조였으며, 사용자의 중복 접근 여부를 검증하지 않은 상태였습니다. <br>
 즉, 요청(Request) 단위로 조회수를 증가시키는 단순 처리 방식이 문제였습니다.
 
 🔹 해결
