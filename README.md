@@ -25,6 +25,7 @@ apache-tomcat-9.0.113 <br>
 
 
 4. 시스템 구조 (Architecture) <br>
+
 본 프로젝트는 MVC(Model-View-Controller) 패턴을 기반으로 설계되었습니다. <br>
 역할을 분리하여 요청 처리 흐름을 명확히 하고, 유지보수성과 확장성을 고려한 구조로 구현하였습니다. <br>
 
