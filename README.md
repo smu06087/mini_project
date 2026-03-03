@@ -1,13 +1,8 @@
-1. 프로젝트 개요 (Overview)
-
+1. 프로젝트 개요(Overview)
 2. 기술 스택 (Tech Stack)
-
 3. 주요 기능 (Features)
-
 4. 시스템 구조 (Architecture)
-
-5. ERD (데이터베이스 설계)
-
+5. ERD (데이터 베이스 설계)
 6. 트러블 슈팅 (Trobuleshooting)
 
 6-1. 조회수 중복 증가 문제
