@@ -49,7 +49,7 @@ Client → Controller(Servlet) → DAO → DB
 - EL, JSTL을 활용한 데이터 출력 <br>
 - 조건문을 통한 권한 기반 UI 제어 <br> 
 - 댓글 계층 구조 재귀 출력 구현 <br>
-- 작성자 본인 여부에 따른 수정/삭제 버튼 분기 처리 <br>
+- 작성자 본인 여부에 따른 수정/삭제 버튼 분기 처리 <br> <br>
 
   구현 포인트 <br>
 - 게시판 및 댓글 기능은 JSP/Servlet 구조에서 직접 구현 <br>
@@ -67,7 +67,7 @@ ERD 사진 <br>
 - 회원 기본 정보 저장 <br>
 - 게시글 및 댓글 작성자와 1:N 관계 <br>
 - MEMBER_STAT_CD, JOURNAL_REASON_CD 등 코드값 기반 상태 관리 <br>
-- 회원 탈퇴 및 상태 변경을 고려한 구조 설계 <br>
+- 회원 탈퇴 및 상태 변경을 고려한 구조 설계 <br> <br>
 
   설계 포인트 <br>
 - 단순 회원 테이블이 아니라 상태 코드 기반 관리 구조 <br>
@@ -76,7 +76,7 @@ ERD 사진 <br>
 🔹 2. ARTICLE (게시글 기본 정보) <br>
 - 게시글 메타데이터 저장 <br>
 - 제목, 작성자, 카테고리, 조회수(CNT), 추천수(GOOD) 등 관리 <br>
-- Member, Category와 FK 관계 <br>
+- Member, Category와 FK 관계 <br> <br>
 
   설계 포인트 <br>
 - 조회수(CNT)와 추천수(GOOD)를 컬럼 분리 <br>
@@ -85,7 +85,7 @@ ERD 사진 <br>
 
 🔹 3. ARTICLE_DTL (게시글 상세 정보) <br>
 - 게시글 본문 및 이미지, 외부 링크 정보 저장 <br>
-- ARTICLE과 1:1 관계 <br>
+- ARTICLE과 1:1 관계 <br> <br>
 
   설계 포인트 <br>
 - 게시글 기본 정보와 상세 내용을 분리 <br>
@@ -94,7 +94,7 @@ ERD 사진 <br>
 
 🔹 4. CATEGORY (카테고리) <br>
 - 카테고리 정보 저장 <br>
-- UP_CATEGORY_ID를 통한 계층 구조 구현 (대분류/소분류) <br>
+- UP_CATEGORY_ID를 통한 계층 구조 구현 (대분류/소분류) <br> <br>
 
   설계 포인트 <br>
 - 자기참조(Self Join) 구조 <br>
@@ -104,7 +104,7 @@ ERD 사진 <br>
 🔹 5. ARTICLE_COMMENT (댓글) <br>
 - 댓글 및 대댓글 저장 <br>
 - UP_COMMENT_ID를 활용한 계층 구조 설계 <br>
-- ARTICLE과 1:N 관계 <br>
+- ARTICLE과 1:N 관계 <br> <br>
 
   설계 포인트 <br>
 - 자기참조 기반 트리 구조 <br>
@@ -117,7 +117,7 @@ ERD 사진 <br>
 
 🔹 7. CODE_MST (공통 코드 관리) <br>
 - 상태 코드 관리용 테이블 <br>
-- MEMBER_STAT_CD, ARTICLE_STAT 등과 연결 가능 <br>
+- MEMBER_STAT_CD, ARTICLE_STAT 등과 연결 가능 <br> <br>
 
   설계 포인트 <br>
 - 하드코딩 방지 <br>
